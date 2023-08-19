@@ -1,4 +1,3 @@
-
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
@@ -6,7 +5,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 module.exports = {
   devServer: {
     client: { // 增加代码校验层弹层
-      overlay: true
+      overlay: true,
     },
     port: 3000,
     open: true,
@@ -19,6 +18,10 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.ts$/,
+        use: 'ts-loader',
+      },
       {
         test: /\.js$/,
         use: ['eslint-loader'],
@@ -43,11 +46,11 @@ module.exports = {
               // regenerator: true,
               // useESModules: false,
               // }],
-              ["@babel/plugin-proposal-decorators", {
-                legacy: true
+              ['@babel/plugin-proposal-decorators', {
+                legacy: true,
               }],
-              ["@babel/plugin-proposal-class-properties", {
-                loose: true
+              ['@babel/plugin-proposal-class-properties', {
+                loose: true,
               }],
             ]
           }
@@ -57,6 +60,6 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new HtmlWebpackPlugin()
-  ]
+    new HtmlWebpackPlugin(),
+  ],
 }
