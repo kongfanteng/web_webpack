@@ -15,7 +15,7 @@
 6. 【Webpack 暴露全局变量】-6_webpack_global_var
 7. 【Webpack  根据 env 启动配置文件】-7_webpack_env
 8. 【Webpack  热更新】-8_webpack_hot_update
-9.  【Webpack  懒加载】-9_webpack_lazy_load
+9. 【Webpack  懒加载】-9_webpack_lazy_load
 10. 【Webpack  动态链接库】-10_webpack_dll
 11. 【Webpack alias/extensions/mainFields】-11_webpack_alias
 12. 【Webpack treeshaking】-12_webpack_treeshaking
