@@ -170,11 +170,3 @@ settings: {
   'import/core-modules': ['html-webpack-plugin', 'clean-webpack-plugin', 'webpack-merge', 'mini-css-extract-plugin'],
 },
 ```
-
-## 临时
-
-- [webpack.config.js](./../file/2_webpack/2_webpack_env/webpack.config.js)
-
-```js
-
-```
