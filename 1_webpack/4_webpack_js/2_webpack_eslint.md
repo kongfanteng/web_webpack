@@ -15,7 +15,7 @@
   use: {
     loader: 'eslint-loader',
   },
-  enforce: true, // 默认在编译 js 前校验
+  enforce: 'pre', // 默认在编译 js 前校验
 },
 ```
 
