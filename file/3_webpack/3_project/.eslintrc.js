@@ -34,6 +34,7 @@ module.exports = {
     'react/jsx-filename-extension': 0,
     'import/no-unresolved': 0,
     'import/extensions': 0,
+    'no-plusplus': 0,
   },
   settings: {
     'import/resolver': {
