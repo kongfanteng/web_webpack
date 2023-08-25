@@ -58,8 +58,13 @@ class Compiler {
     const p = this.config.output.path || path.resolve('dist')
 
     Object.keys(this.assets).forEach((fname) => {
-      const outputPath = path.join(p, fname)
-      fs.writeFileSync(outputPath, this.assets[filename])
+      fs.stat(p, (err) => {
+        if (err) {
+          fs.mkdirSync(p, { recursive: true })
+        }
+        const outputPath = path.join(p, fname)
+        fs.writeFileSync(outputPath, this.assets[filename])
+      })
     })
   }
 
